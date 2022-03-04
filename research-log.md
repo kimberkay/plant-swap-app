@@ -36,4 +36,4 @@ March-4-2022
 
 9:30 - 9:45   Chat with classmate about tutorial to find good place to start
 
-9:45- 
+9:45- 10:50  Continue with tutorial
