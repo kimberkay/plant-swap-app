@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useQuery } from 'react-query';
 
+
+
 const fetchSwaps = async () => {
   const res = await fetch('https://localhost:5001/api/swaps/');
   return res.json();
@@ -20,6 +22,7 @@ const SwapsReveal = () => {
       { status === 'error' && (<div>Error fetching data</div>)}
  
       { status === 'success' && (
+        
         
         <ul>
           { data.filter(e=>e.ingredientToSwap === "chicken" && e.cuisineType === "Japanese")
