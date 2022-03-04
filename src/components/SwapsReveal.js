@@ -13,9 +13,7 @@ const SwapsReveal = () => {
   const { data, status } = useQuery('swaps', fetchSwaps);
   console.log(data)
 
-  const reveal = (data) => {
-    return data.filter(e=>e.ingredientToSwap === "chicken" && e.cuisineType === "Japanese");
-  }
+  
 
   return (
     <React.Fragment>

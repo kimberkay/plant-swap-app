@@ -7,19 +7,18 @@ import SwapsReveal from './SwapsReveal';
 const queryClient = new QueryClient()
 
 function App() {
-  const [SelectIngredients, setSelectIngredients ] = useState(true);
+  const [selectIngredients, setSelectIngredients ] = useState(true);
+  // const [swapsReveal, setSwapsReveal] = useState(false)
 
 
-  const handleClick = () => {
-    return setSelectIngredients(false);
-  }
+
 
   return (
     <QueryClientProvider client={queryClient}>
       <Header />
       {/* <SelectIngredients /> */}
       <SwapsReveal />
-      <button onClick={()=> handleClick()}>show swaps</button>
+      
 
         
      
