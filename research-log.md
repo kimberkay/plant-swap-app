@@ -29,3 +29,7 @@ Feb-28-2022
 March-3-2022
 
 7:30 - 8:45 watch tutorial on React
+
+March-4-2022
+
+8:50 -     Watch tutorial on React
