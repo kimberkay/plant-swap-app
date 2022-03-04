@@ -32,4 +32,8 @@ March-3-2022
 
 March-4-2022
 
-8:50 -     Watch tutorial on React
+8:50 - 9:30    Watch tutorial on React
+
+9:30 - 9:45   Chat with classmate about tutorial to find good place to start
+
+9:45- 
