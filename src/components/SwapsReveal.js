@@ -3,10 +3,15 @@ import { useQuery } from 'react-query';
 
 
 
+
 const fetchSwaps = async () => {
   const res = await fetch('https://localhost:5001/api/swaps/');
   return res.json();
 }
+
+// const ingredientSelection = (userSelection) => {
+//   return userSelection
+// }
 
 
 const SwapsReveal = () => {
