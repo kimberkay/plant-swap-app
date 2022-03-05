@@ -1,6 +1,6 @@
+import React from 'react'
 import { useFetch } from '../../hooks/useFetch'
 import { useState } from 'react'
-import { Search } from './Search'
 
 
 import './Swaps.css'
@@ -9,6 +9,13 @@ import './Swaps.css'
 
 export default function Swaps() {
   const { data, isPending, error } = useFetch('https://localhost:5001/api/swaps/')
+  const [userSelection, setUserSelection] = useState([])
+
+  const addUserSelection = (input) => {
+    setUserSelection((input)=> {
+      return [input]
+    })
+  }
   
   
 
@@ -19,8 +26,6 @@ export default function Swaps() {
       {data && data.filter(e=>e.ingredientToSwap ==="chicken" && e.cuisineType === "Italian")
         .map(swap => ( 
         <li key={swap.swapId}>
-          <p>Out with the {swap.ingredientToSwap}...</p>
-          <p>Give these a go...</p>
           <h3>{swap.swapOne}</h3>
           <p>{swap.swapOneAbout}</p>
           <h3>{swap.swapTwo}</h3>

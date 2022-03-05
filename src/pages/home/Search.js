@@ -1,26 +1,29 @@
 import { useState } from 'react'
 
 
-export default function SelectIngredientForm({ ingredientSelection }) {
+export default function SelectIngredientForm({ userSelection }) {
   const [ingredient, setIngredient] = useState('beef')
   const [cuisine, setCuisine] = useState('american comfort')
 
-  const resetForm = () => {
-    setIngredient('')
-    setCuisine('')
-  }
+
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    
+
     const userSelection = 
       [ingredient,cuisine]  
       console.log(userSelection)
     }
 
+    addUserSelection();
+
+  
+
 
 
     
-    resetForm()
+
   
 
   return (

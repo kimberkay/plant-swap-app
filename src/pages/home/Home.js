@@ -6,9 +6,10 @@ import Swaps from './Swaps';
 import './Home.css'
 
 export default function Home() {
+
   return (
     <React.Fragment>
-      <Search />
+      <Search addUserSelection={addUserSelection}/>
       <Swaps />
     </React.Fragment>  
   )
