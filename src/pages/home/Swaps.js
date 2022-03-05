@@ -1,6 +1,6 @@
 import { useFetch } from '../../hooks/useFetch'
 import { useState } from 'react'
-import { Search } from '../../components/Search'
+import { Search } from './Search'
 
 
 import './Swaps.css'
