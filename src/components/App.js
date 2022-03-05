@@ -19,14 +19,14 @@ const handleClick = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <Header />
-      {/* {showModal && (
+      {showModal && (
         <Modal>
           <SelectIngredientForm />
         </Modal>
       )}
       <div>
         <button onClick={()=> setShowModal(true)}>Enter Ingredient to Swap</button>
-      </div> */}
+      </div>
       <SwapsReveal />
     </QueryClientProvider>
   )
