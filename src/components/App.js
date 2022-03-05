@@ -1,27 +1,32 @@
 import React, { useState } from 'react';
 import { QueryClientProvider, QueryClient } from 'react-query';
 import Header from './Header';
-// import SelectIngredientForm from './SelectIngredientForm'
+import Modal from './Modal'
+import SelectIngredientForm from './SelectIngredientForm';
 import SwapsReveal from './SwapsReveal';
 
 const queryClient = new QueryClient()
 
-
-
-
-
 function App() {
-// const [userSelection, setUserSelection] = useState([])
+  const [showModal, setShowModal]= useState(false)
+  
+const handleClick = () => {
+  return setShowModal;
+}
 
-// const ingredientSelection = (userSelection) => {
-//   setUserSelection
-// }
 
 
   return (
     <QueryClientProvider client={queryClient}>
       <Header />
-      {/* <SelectIngredientForm /> */}
+      {/* {showModal && (
+        <Modal>
+          <SelectIngredientForm />
+        </Modal>
+      )}
+      <div>
+        <button onClick={()=> setShowModal(true)}>Enter Ingredient to Swap</button>
+      </div> */}
       <SwapsReveal />
     </QueryClientProvider>
   )

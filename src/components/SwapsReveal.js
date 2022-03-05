@@ -9,10 +9,6 @@ const fetchSwaps = async () => {
   return res.json();
 }
 
-// const ingredientSelection = (userSelection) => {
-//   return userSelection
-// }
-
 
 const SwapsReveal = () => {
   const { data, status } = useQuery('swaps', fetchSwaps);
