@@ -6,22 +6,22 @@ import Swaps from './Swaps';
 // styles
 import './Home.css'
 
-export default function Home( {handleSubmit} ) {
+export default function Home(props) {
   const [showModal, setShowModal] = useState([])
-  const []
+  const [userSelection, setUserSelection] =  useState([])
   
+
   
-  
-  const addSwaps = (swap) => {
-    setSwaps(prevSwaps => {
-      return[...prevSwaps, swap]
-    })
-  }
+  // const addSwaps = (swap) => {
+  //   setSwaps(prevSwaps => {
+  //     return[...prevSwaps, swap]
+  //   })
+  // }
 
   return (
     <React.Fragment>
-      <Search handleSubmit  />
-      <Swaps />
+      <Search  />
+      <Swaps userSelection = {[ingredient, cuisine]}/>
     </React.Fragment>  
   )
 }

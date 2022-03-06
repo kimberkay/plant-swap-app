@@ -8,7 +8,7 @@ import './Swaps.css'
 
 
 
-export default function Swaps() {
+export default function Swaps(props) {
   const { data, isPending, error } = useFetch('https://localhost:5001/api/swaps/')
   
   
@@ -17,7 +17,7 @@ export default function Swaps() {
     <React.Fragment>
       {error && <p className="error">{error}</p>}
       {isPending && <p className="loading">Loading...</p>}
-      {data && data.filter(e=>e.ingredientToSwap === userSelection[0] && e.cuisineType === userSelection[1])
+      {data && data.filter(e=>e.ingredientToSwap === props.userSelection[0] && e.cuisineType === props.userSelection[1])
         .map(swap => ( 
         <li key={swap.swapId}>
           <h3>{swap.swapOne}</h3>
