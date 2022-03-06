@@ -5,6 +5,13 @@ export default function SelectIngredientForm({ ingredientSelection }) {
   const [ingredient, setIngredient] = useState('beef')
   const [cuisine, setCuisine] = useState('american comfort')
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const userSelection = 
+      [ingredient,cuisine]  
+      console.log(userSelection)
+    }
+    
   const resetForm = () => {
     setIngredient('')
     setCuisine('')

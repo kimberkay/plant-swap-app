@@ -1,31 +1,8 @@
 import { useState } from 'react'
 
 
-export default function SelectIngredientForm({ userSelection }) {
-  const [ingredient, setIngredient] = useState('beef')
-  const [cuisine, setCuisine] = useState('american comfort')
-
-
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    
-
-    const userSelection = 
-      [ingredient,cuisine]  
-      console.log(userSelection)
-    }
-
-    addUserSelection();
-
+export default function SelectIngredientForm() {
   
-
-
-
-    
-
-  
-
   return (
     <form className="select-ingredient-form" onSubmit={handleSubmit}>
       <label>
