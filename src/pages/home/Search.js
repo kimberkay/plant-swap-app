@@ -5,28 +5,14 @@ export default function SelectIngredientForm({addUserSelection}) {
   const [ingredient, setIngredient] = useState('chicken')
   const [cuisine, setCuisine]= useState('Italian')
   
-  console.log(3)
-
-  
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const swaps = [ingredient, cuisine]
-    addUserSelection(swaps)
-  
-    
-    console.log(swaps)
-    console.log(addUserSelection(swaps))
-    console.log(addUserSelection(swaps))
-    console.log(4)
+    const swapFilter = [ingredient, cuisine]
+    addUserSelection(swapFilter)
   }
 
   
-
-
-   
-
- 
   
   return (
     <form className="select-ingredient-form" onSubmit={handleSubmit}>
