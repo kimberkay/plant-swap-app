@@ -6,49 +6,55 @@ import './Swaps.css'
 
 
 
-export default function Swaps(swaps) {
+export default function Swaps(swapFilter) {
   const { data, isPending, error } = useFetch('https://localhost:5001/api/swaps/')
   const [addSelection, setAddSelection] = useState([])
-  const [showSwaps, setShowSwaps] = useState({})
+  const [swaps, setSwaps] = useState([])
+  const [showSwaps, setShowSwaps] = useState([])
 
   
-  
-
-  const addUserSelection = (swaps) => { 
-    setAddSelection(swaps)
-    console.log("here i am");
-    return swaps;
-    
+  const addUserSelection = (swapFilter) => { 
+    setAddSelection(swapFilter)
+    return swapFilter;  
   }
 
- 
-  console.log(addUserSelection, "you made it");
-  console.log(1)
+  const swap = (addSelection) => {
+    console.log(data, "this data")
+    setSwaps(
+    data.filter(e=>e.ingredientToSwap === addSelection[0] && e.cuisineType === addSelection[1])
+        .map(swap => ( 
+        <li key={swap.swapId}>
+          <h3>{swap.swapOne}</h3>
+          <h3>{swap.swapTwo}</h3>
+          <h3>{swap.swapThree}</h3>
+        </li>  
+       )))}
   
-  
+  const swapList = ( swap ) => {
+    setShowSwaps(prevSwaps => {
+      return [...prevSwaps, swap]
+    })
+  }
+
+
 
   
 
   return (
     <React.Fragment>
       <Search addUserSelection={addUserSelection} />
-      console.log(2)
-      console.log(addUserSelection)
       {error && <p className="error">{error}</p>}
       {isPending && <p className="loading">Loading...</p>}
-      {console.log(addSelection, data, showSwaps)}
-        {data && data.filter(e=>e.ingredientToSwap === addSelection[0] && e.cuisineType === addSelection[1])
+      { data && swap}
+      {/* {data && data.filter(e=>e.ingredientToSwap === addSelection[0] && e.cuisineType === addSelection[1])
         .map(swap => ( 
         <li key={swap.swapId}>
           <h3>{swap.swapOne}</h3>
-          
           <h3>{swap.swapTwo}</h3>
-          
           <h3>{swap.swapThree}</h3>
-         
         </li>  
          
-      ))}
+      ))} */}
       {console.log(addSelection)}
     </React.Fragment>
   )

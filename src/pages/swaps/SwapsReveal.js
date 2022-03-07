@@ -25,8 +25,6 @@ const SwapsReveal = () => {
       { status === 'error' && (<div>Error fetching data</div>)}
  
       { status === 'success' && (
-        
-        
         <ul>
           { data.filter(e=>e.ingredientToSwap === "chicken" && e.cuisineType === "Japanese")
             .map(data => ( 
