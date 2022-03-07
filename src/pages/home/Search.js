@@ -1,16 +1,32 @@
 import { useState } from 'react'
 
 
-export default function SelectIngredientForm(props) {
-  const [ingredient, setIngredient] = useState('')
-  const [cuisine, setCuisine]= useState('')
+export default function SelectIngredientForm({addUserSelection}) {
+  const [ingredient, setIngredient] = useState('chicken')
+  const [cuisine, setCuisine]= useState('Italian')
+  
+  console.log(3)
+
   
 
-  handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
-    const userSelection = [ingredient,cuisine]
-    props.onSubmit({flavor: e.target.ingredient.value, cuisine: e.target.cuisine.value})
+    const swaps = [ingredient, cuisine]
+    addUserSelection(swaps)
+  
+    
+    console.log(swaps)
+    console.log(addUserSelection(swaps))
+    console.log(addUserSelection(swaps))
+    console.log(4)
   }
+
+  
+
+
+   
+
+ 
   
   return (
     <form className="select-ingredient-form" onSubmit={handleSubmit}>

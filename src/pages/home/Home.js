@@ -1,14 +1,13 @@
 import React from 'react'
-import { useState } from 'react'
-import Search from './Search';
 import Swaps from './Swaps';
 
 // styles
 import './Home.css'
 
 export default function Home(props) {
-  const [showModal, setShowModal] = useState([])
-  const [userSelection, setUserSelection] =  useState([])
+  
+
+  
   
 
   
@@ -20,8 +19,8 @@ export default function Home(props) {
 
   return (
     <React.Fragment>
-      <Search  />
-      <Swaps userSelection = {[ingredient, cuisine]}/>
+      {/* <Search  /> */}
+      <Swaps />
     </React.Fragment>  
   )
 }
