@@ -19,7 +19,6 @@ export default function Home(props) {
 
   return (
     <React.Fragment>
-      {/* <Search  /> */}
       <Swaps />
     </React.Fragment>  
   )
