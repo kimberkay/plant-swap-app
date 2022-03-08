@@ -1,17 +1,10 @@
 import { useState } from 'react'
+import React from 'react'
 
 export default function SwapList({ swaps }) {
-  const [addSwaps, setAddSwaps] = useState([])
-
-  const makeList =(swap)=>{
-    setAddSwaps(prevSwap => {
-      return [...prevSwap, swap]
-    })
-  }
-
-
-  console.log( { swaps }, "you are here")
+ 
   return(
+    <React.Fragment>
     <div className="swap-list">
       {swaps.map(swap => (
         <div key={swap.SwapId} className="card">
@@ -21,5 +14,9 @@ export default function SwapList({ swaps }) {
         </div>
       ))}
     </div>
+    </React.Fragment>
+    
+
+    
   )
 }
