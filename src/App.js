@@ -10,6 +10,7 @@ import './App.css'
 function App() {
   return (
     <div className="App">
+      <div className="background-image"></div>
       <BrowserRouter>
         <Navbar />
         <Switch>
@@ -24,7 +25,6 @@ function App() {
           </Route> 
         </Switch>
       </BrowserRouter>
-      
     </div>
   );
 }

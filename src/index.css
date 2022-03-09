@@ -8,9 +8,24 @@ body {
   font-family: Raleway, sans-serif;
   margin: 0;
   font-size: 1.4em;
-  background: #dfdfdf;
+  background: rgb(210,238,223);
   color: #333;
 }
+
+.background-image {
+  background-image: url("./img/veggies.jpg");
+  height: 600px;
+  opacity: 50%;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
+  size-adjust: 75%;
+}
+
+
 h1,h2,h3,p {
   margin: 0;
 }
@@ -34,3 +49,27 @@ input, textarea {
   text-align: center;
   margin: 40px auto;
 }
+
+.button {
+    transition: all .5s ease;
+    color: rgb(254, 203, 8);
+    border: 4px solid rgb(254,203,8);
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 2em;
+  }
+  
+  .button:hover {
+    color: #fff;
+    background-color: rgb(254, 203, 8);
+  }
+  
+  .button-align {
+    text-align: center;
+  }

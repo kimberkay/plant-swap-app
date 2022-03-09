@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+import './Search.css'
+
 
 export default function SelectIngredientForm({ data, addSwap }) {
   const [ingredient, setIngredient] = useState('chicken')
@@ -16,6 +18,7 @@ export default function SelectIngredientForm({ data, addSwap }) {
   
   
   return (
+    <div className="search-card">
     <form className="select-ingredient-form" onSubmit={handleSubmit}>
       <label>
         <span>Select Ingredient to Swap:</span>
@@ -41,7 +44,8 @@ export default function SelectIngredientForm({ data, addSwap }) {
           <option value="baked-goods">Baked Goods</option>
         </select>
       </label>
-      <button>Submit</button>
+      <button className="button">Submit</button>
     </form>
+    </div>
   )
 }
