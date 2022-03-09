@@ -2,36 +2,31 @@ import React from 'react'
 import { useFetch } from '../../hooks/useFetch'
 import { useState } from 'react'
 import Search from './Search'
+import SwapsList from '../../components/SwapsList'
 import './Swaps.css'
 
 
 
-export default function Swaps(swapFilter) {
+export default function Swaps({swap}) {
   const { data, isPending, error } = useFetch('https://localhost:5001/api/swaps/')
-  const [addSelection, setAddSelection] = useState([])
-  const [userSwaps, setUserSwaps] = useState([])
- 
+  const [swaps, setSwaps] = useState([])
 
-  const addUserSelection = (swapFilter) => { 
-    setAddSelection(swapFilter)
-    return addSelection;  
+  console.log(swap)
+
+  const addSwap = (swap) => {
+    setSwaps(prevSwaps=> {
+      return [...prevSwaps, swap]
+    })
   }
-
 
 
   return (
     <React.Fragment>
-      <Search addUserSelection={addUserSelection} />
+      <div className="card"></div>
       {error && <p className="error">{error}</p>}
       {isPending && <p className="loading">Loading...</p>}
-      {data && data.filter(e=>e.ingredientToSwap === addSelection[0] && e.cuisineType === addSelection[1])
-        .map(swap => ( 
-        <li key={swap.swapId}>
-          <h3>{swap.swapOne}</h3>
-          <h3>{swap.swapTwo}</h3>
-          <h3>{swap.swapThree}</h3>
-        </li>     
-      ))}
+      {data && <Search data={data} addSwap={addSwap} />}
+      <SwapsList swaps={swaps} /> 
     </React.Fragment>
   )
 }

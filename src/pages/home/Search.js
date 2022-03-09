@@ -1,15 +1,16 @@
 import { useState } from 'react'
 
 
-export default function SelectIngredientForm({addUserSelection}) {
+export default function SelectIngredientForm({ data, addSwap }) {
   const [ingredient, setIngredient] = useState('chicken')
   const [cuisine, setCuisine]= useState('Italian')
   
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const swapFilter = [ingredient, cuisine]
-    addUserSelection(swapFilter)
+    const swap = data.filter(e=>e.ingredientToSwap === ingredient && e.cuisineType === cuisine)[0]           
+    console.log(swap)
+    addSwap(swap)  
   }
 
   
@@ -21,20 +22,23 @@ export default function SelectIngredientForm({addUserSelection}) {
         <select onChange={(e) => setIngredient(e.target.value)}>
           <option value="chicken">chicken</option>
           <option value="beef">beef</option>
-          <option value="milk">milk</option>
-          <option value="cheese">cheese</option>
-          <option value="eggs">eggs</option>
+          <option value="bacon">chicken</option>
+          <option value="eggs">milk</option>
+          <option value="milk">cheese</option>
+          <option value="cheese">eggs</option>
         </select>
       </label>
       <label>
         <span>Select the Cuisine Type of Your Recipe:</span>
         <select onChange={(e) => setCuisine(e.target.value)}>
-          <option value="Italian">Italian</option>
-          <option value="Japanese">Japanese</option>
-          <option value="Thai">Thai</option>
-          <option value="Chinese">Chinese</option>
-          <option value="AmericanComfort">American Comfort</option>
-          <option value="BakedGoods">baked goods</option>
+          <option value="italian">Italian</option>
+          <option value="thai">Japanese</option>
+          <option value="japanese">Thai</option>
+          <option value="indian">Chinese</option>
+          <option value="mexican">American Comfort</option>
+          <option value="american">baked goods</option>
+          <option value="chinese">baked goods</option>
+          <option value="baked-goods">baked goods</option>
         </select>
       </label>
       <button>Submit</button>
