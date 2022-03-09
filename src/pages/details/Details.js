@@ -15,9 +15,28 @@ export default function Details() {
       <div className="details">
       {error && <p className="error">{error}</p>}
       {isPending && <p className="loading">Loading...</p>}
-      {data && <h1>{data.swapOne}</h1>}
+      {data && (
+        <React.Fragment>
+          <h3 className="details-in-out">Out with the <em>{data.ingredientToSwap}</em></h3>
+          <h3 className="details-in-out">Try these instead...</h3>
+          <br></br>
+          <h3>{data.swapOne}</h3>
+          <p>About - {data.swapOneAbout}</p>
+          <p>Prep - {data.swapOnePrep}</p>
+          <p>Notes - {data.swapOneFlavorNotes}</p>
+          <br></br>
+          <h3>{data.swapOne}</h3>
+          <p>About - {data.swapOneAbout}</p>
+          <p>Prep - {data.swapOnePrep}</p>
+          <p>Notes - {data.swapOneFlavorNotes}</p>
+          <br></br>
+          <h3>{data.swapOne}</h3>
+          <p>About - {data.swapOneAbout}</p>
+          <p>Prep - {data.swapOnePrep}</p>
+          <p>Notes - {data.swapOneFlavorNotes}</p>
+
+        </React.Fragment>)}
       </div>
-      <h1>Your Swaps</h1>
     </React.Fragment>
   )
 }
