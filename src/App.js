@@ -1,8 +1,8 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/home/Home'
-// import Swaps from './pages/swaps/Swaps'
-// import Search from './pages/search/Search'
+import About from './pages/about/About'
+import Details from './pages/details/Details'
 
 //styles
 import './App.css'
@@ -16,12 +16,12 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          {/* <Route path="/search">
-            <Search />
+          <Route path="/about">
+            <About />
           </Route>
-          <Route path="/swaps/:id">
-            <Swaps />
-          </Route> */}
+          <Route path="/details/:id">
+            <Details />
+          </Route> 
         </Switch>
       </BrowserRouter>
       

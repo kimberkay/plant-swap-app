@@ -11,8 +11,6 @@ export default function Swaps({swap}) {
   const { data, isPending, error } = useFetch('https://localhost:5001/api/swaps/')
   const [swaps, setSwaps] = useState([])
 
-  console.log(swap)
-
   const addSwap = (swap) => {
     setSwaps(prevSwaps=> {
       return [...prevSwaps, swap]

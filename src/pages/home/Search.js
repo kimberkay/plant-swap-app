@@ -22,23 +22,23 @@ export default function SelectIngredientForm({ data, addSwap }) {
         <select onChange={(e) => setIngredient(e.target.value)}>
           <option value="chicken">chicken</option>
           <option value="beef">beef</option>
-          <option value="bacon">chicken</option>
-          <option value="eggs">milk</option>
-          <option value="milk">cheese</option>
-          <option value="cheese">eggs</option>
+          <option value="bacon">bacon</option>
+          <option value="eggs">eggs</option>
+          <option value="milk">milk</option>
+          <option value="cheese">cheese</option>
         </select>
       </label>
       <label>
         <span>Select the Cuisine Type of Your Recipe:</span>
         <select onChange={(e) => setCuisine(e.target.value)}>
-          <option value="italian">Italian</option>
-          <option value="thai">Japanese</option>
-          <option value="japanese">Thai</option>
-          <option value="indian">Chinese</option>
-          <option value="mexican">American Comfort</option>
-          <option value="american">baked goods</option>
-          <option value="chinese">baked goods</option>
-          <option value="baked-goods">baked goods</option>
+          <option value="Italian">Italian</option>
+          <option value="Thai">Thai</option>
+          <option value="Japanese">Japanese</option>
+          <option value="Indian">Indian</option>
+          <option value="Mexican">Mexican</option>
+          <option value="american">American</option>
+          <option value="chinese">Chinese</option>
+          <option value="baked-goods">Baked Goods</option>
         </select>
       </label>
       <button>Submit</button>
