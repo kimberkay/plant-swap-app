@@ -7,9 +7,6 @@ export default function Navbar() {
     <div className="navbar">
       {/* <img className="headerPic" src={PlantSwapHeader} alt="illustrated pic of veggies around a wood-grain sign" />  */}
       <nav>
-       <Link>
-       <h1>Plant Swap</h1>
-       </Link>
        <Link to="/about">About</Link>
         {/* <img className="headerPic" src={PlantSwapHeader} alt="illustrated pic of veggies around a wood-grain sign" />  */}
       </nav>
