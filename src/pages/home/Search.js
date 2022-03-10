@@ -15,8 +15,6 @@ export default function SelectIngredientForm({ data, addSwap }) {
     console.log(swap)
     addSwap(swap)  
   }
-
-  
   
   return (
   <Row>

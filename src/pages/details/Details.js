@@ -25,12 +25,12 @@ export default function Details() {
           <p>Prep - {data.swapOnePrep}</p>
           <p>Notes - {data.swapOneFlavorNotes}</p>
           <br></br>
-          <h3>{data.swapOne}</h3>
+          <h3>{data.swapTwo}</h3>ß
           <p>About - {data.swapTwoAbout}</p>
           <p>Prep - {data.swapTwoPrep}</p>
           <p>Notes - {data.swapTwoFlavorNotes}</p>
           <br></br>
-          <h3>{data.swapOne}</h3>
+          <h3>{data.swapThree}</h3>
           <p>About - {data.swapThreeAbout}</p>
           <p>Prep - {data.swapThreePrep}</p>
           <p>Notes - {data.swapThreeFlavorNotes}</p>

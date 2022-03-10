@@ -1,13 +1,13 @@
-.search-card {
+.wrapper {
+ max-width: 800px;
   border-radius: 10px;
   padding: 2em;
   padding-top: 2em;
   padding-bottom: 2em;
   margin-bottom: 1.5em;
-  margin-top: 10em;
+  margin-top: 4em;
   height: max-content;
-  max-width: 600px;
-  background-color: rgba(247, 242, 236, 0.927);
+  background-color: #3f00b3b1;
   text-align: center;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25)
 }
