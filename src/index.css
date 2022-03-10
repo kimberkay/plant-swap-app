@@ -13,7 +13,7 @@ body {
 }
 
 .background-image {
-  background-image: url("./img/veggies.jpg");
+  background-image: url("");
   height: 600px;
   opacity: 50%;
   position: fixed;

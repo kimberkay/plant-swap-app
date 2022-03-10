@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
-import { PlantSwapHeader } from '../img/plant-swap-header.png'
-import './Navbar.css'
+import React from 'react'
+// import { PlantSwapHeader } from '../img/plant-swap-header.png'
+import './Header.css'
 
 export default function Header() {
   return(
