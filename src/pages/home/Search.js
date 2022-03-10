@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, FormControl } from 'react-bootstrap'
 
 import './Search.css'
 
@@ -18,8 +18,6 @@ export default function SelectIngredientForm({ data, addSwap }) {
   
   return (
   <Row>
-    <div className="col-sm">
-      <div className="wrapper">
         <form className="select-ingredient-form" onSubmit={handleSubmit}>
           <label>
           <span>Select Ingredient to Swap:</span>
@@ -47,8 +45,6 @@ export default function SelectIngredientForm({ data, addSwap }) {
           </label>
           <button className="button">Submit</button>
         </form>
-      </div>
-    </div>
   </Row>
   )
 }

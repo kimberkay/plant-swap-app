@@ -3,6 +3,7 @@ import { useFetch } from '../../hooks/useFetch'
 import { useState } from 'react'
 import Search from './Search'
 import SwapsList from '../../components/SwapsList'
+import { Row, Col, FormControl } from 'react-bootstrap'
 import './Swaps.css'
 
 
@@ -20,11 +21,13 @@ export default function Swaps({swap}) {
 
   return (
     <React.Fragment>
+      <Row>
       <div className="card"></div>
       {error && <p className="error">{error}</p>}
       {isPending && <p className="loading">Loading...</p>}
-      {data && <Search data={data} addSwap={addSwap} />}
+      {data && <Search className="card" data={data} addSwap={addSwap} />}
       <SwapsList swaps={swaps} /> 
+      </Row>
     </React.Fragment>
   )
 }

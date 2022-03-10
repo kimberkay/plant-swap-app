@@ -1,5 +1,5 @@
-.wrapper {
- max-width: 800px;
+.search .wrapper {
+  /* border-style: solid; */
   border-radius: 10px;
   padding: 2em;
   padding-top: 2em;
@@ -7,7 +7,12 @@
   margin-bottom: 1.5em;
   margin-top: 4em;
   height: max-content;
-  background-color: #3f00b3b1;
+  background-color: rgb(208,234,221);
+  color: white;
   text-align: center;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25)
 }
+
+
+
+/* git log|grep --line-buffered "Date" */
