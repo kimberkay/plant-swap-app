@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Marcellus&family=Questrial&display=swap');
+
 
 /* base styles */
-html, body, #root {
+/* html, body, #root {
   height: 100%;
 }
-body {
-  font-family: Raleway, sans-serif;
+/* body {
+  font-family: 'Libre Baskerville', serif; 
   margin: 0;
   font-size: 1.4em;
   background: rgb(210,238,223);
   color: #333;
-}
+} */
 
 .background-image {
-  background-image: url("");
+  background-image: url("./img/background-texture.png");
   height: 600px;
   opacity: 50%;
   position: fixed;
@@ -72,4 +73,4 @@ input, textarea {
   
   .button-align {
     text-align: center;
-  }
+  }  

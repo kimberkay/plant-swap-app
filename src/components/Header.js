@@ -1,18 +1,18 @@
 import { Link } from 'react-router-dom'
 import React from 'react'
-// import { PlantSwapHeader } from '../img/plant-swap-header.png'
+import { Row, Col } from 'react-bootstrap'
+import Logo from '../img/plant-s-logo.png'
 import './Header.css'
 
 export default function Header() {
   return(
     <React.Fragment>
-    <div className="header">
-
-
-
-    </div>
+      <Row>
+      <div className="header-wrapper">
+        <img className="logo" src={Logo} alt="white veggies with a small pink heart being tossed in a pot, evokes love in cooking" />
+      </div>
+      </Row>
     </React.Fragment>
-     
-    
-  )
+
+  );
 }

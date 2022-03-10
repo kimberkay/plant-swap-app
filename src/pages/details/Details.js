@@ -26,14 +26,14 @@ export default function Details() {
           <p>Notes - {data.swapOneFlavorNotes}</p>
           <br></br>
           <h3>{data.swapOne}</h3>
-          <p>About - {data.swapOneAbout}</p>
-          <p>Prep - {data.swapOnePrep}</p>
-          <p>Notes - {data.swapOneFlavorNotes}</p>
+          <p>About - {data.swapTwoAbout}</p>
+          <p>Prep - {data.swapTwoPrep}</p>
+          <p>Notes - {data.swapTwoFlavorNotes}</p>
           <br></br>
           <h3>{data.swapOne}</h3>
-          <p>About - {data.swapOneAbout}</p>
-          <p>Prep - {data.swapOnePrep}</p>
-          <p>Notes - {data.swapOneFlavorNotes}</p>
+          <p>About - {data.swapThreeAbout}</p>
+          <p>Prep - {data.swapThreePrep}</p>
+          <p>Notes - {data.swapThreeFlavorNotes}</p>
 
         </React.Fragment>)}
       </div>
