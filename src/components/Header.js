@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import React from 'react'
 import { Row, Col } from 'react-bootstrap'
-import Logo from '../img/plant-s-logo.png'
+import Logo from '../img/logo.png'
 import './Header.css'
 
 export default function Header() {

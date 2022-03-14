@@ -6,33 +6,39 @@ import './Details.css'
 
 export default function Details() {
   const { id } = useParams()
-  const url = 'https://localhost:5001/api/swaps/' + id
+  const url = 'http://localhost:5000/api/swaps/' + id
   const { error, isPending, data } = useFetch(url)
+  console.log(useFetch(url))
+  console.log(data)
+  console.log(url)
+  console.log(id)
 
 
 
   return (
     <React.Fragment >
-      <Row className="wrapper">
-      <div className="details">
-      <h3>Out with the <em>{data.ingredientToSwap}</em></h3>
-          <h3>Try these instead...</h3>
-          <br></br>
       {error && <p className="error">{error}</p>}
       {isPending && <p className="loading">Loading...</p>}
       {data && (
         <React.Fragment >
           <Row className="wrapper">
-          <h3>{data.swapOne}</h3>
-          <p>About - {data.swapOneAbout}</p>
-          <p>Prep - {data.swapOnePrep}</p>
-          <p>Notes - {data.swapOneFlavorNotes}</p>
+          <h3><em>{data.swapOne}</em></h3>
+          {data.swapOneAbout}
+          {data.swapOnePrep}
+          {data.swapOneFlavorNotes}
           </Row>
           <Row className="wrapper">
-          <h3>{data.swapTwo}</h3>ß
-          <p>About - {data.swapTwoAbout}</p>
-          <p>Prep - {data.swapTwoPrep}</p>
-          <p>Notes - {data.swapTwoFlavorNotes}</p>
+          <h3>{data.swapTwo}</h3>
+          <Row className="col">
+            <em>About</em>
+            <em>Prep</em>
+            <em>Notes</em>
+          </Row>
+          <Row className="col-6">
+          <p>About {data.swapTwoAbout}</p>
+          <p>Prep{data.swapTwoPrep}</p>
+          <p>Notes{data.swapTwoFlavorNotes}</p>
+          </Row>
           </Row>
           <Row className="wrapper">
           <h3>{data.swapThree}</h3>
@@ -40,11 +46,7 @@ export default function Details() {
           <p>Prep - {data.swapThreePrep}</p>
           <p>Notes - {data.swapThreeFlavorNotes}</p>
           </Row>
-
-        </React.Fragment>)}
-
-      </div>
-      </Row>
+        </React.Fragment>)}  
     </React.Fragment>
   )
-      }
+}

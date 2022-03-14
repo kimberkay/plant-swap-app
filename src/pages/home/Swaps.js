@@ -9,7 +9,7 @@ import './Swaps.css'
 
 
 export default function Swaps({swap}) {
-  const { data, isPending, error } = useFetch('https://localhost:5001/api/swaps/')
+  const { data, isPending, error } = useFetch('http://localhost:5000/api/swaps/')
   const [swaps, setSwaps] = useState([])
 
   const addSwap = (swap) => {

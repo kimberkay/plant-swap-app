@@ -9,7 +9,8 @@
   background-color: rgb(208,234,221);
   color: white;
   text-align: center;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25)
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
 }
 
 select {
@@ -19,6 +20,9 @@ select {
 
 
 }
+
+
+
 
 /* rgb(46,97,88) */
 

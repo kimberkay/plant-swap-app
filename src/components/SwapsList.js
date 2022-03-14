@@ -5,9 +5,6 @@ import './SwapsList.css'
 export default function SwapList({ swaps, details }) {
 
  
-
-
- 
   return(
     <React.Fragment>
     <div className="swap-list">
@@ -21,9 +18,11 @@ export default function SwapList({ swaps, details }) {
           <h3>{swap.swapTwo}</h3>
           <h3>{swap.swapThree}</h3>
           <Link to={`/details/${swap.swapId}`}>Learn More</Link>
+          {console.log(swap.swapId)}
         </div>
       ))}
       {console.log(swaps)}
+      
     </div>
     </React.Fragment>  
   )
