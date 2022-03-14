@@ -26,7 +26,9 @@ export default function Details() {
           {data.swapOneAbout}
           {data.swapOnePrep}
           {data.swapOneFlavorNotes}
+          
           </Row>
+          <div className="spacer"></div>
           <Row className="wrapper">
           <h3>{data.swapTwo}</h3>
           <Row className="col">
@@ -34,12 +36,14 @@ export default function Details() {
             <em>Prep</em>
             <em>Notes</em>
           </Row>
+          <div className="spacer"></div>
           <Row className="col-6">
           <p>About {data.swapTwoAbout}</p>
           <p>Prep{data.swapTwoPrep}</p>
           <p>Notes{data.swapTwoFlavorNotes}</p>
           </Row>
           </Row>
+          <div className="spacer"></div>
           <Row className="wrapper">
           <h3>{data.swapThree}</h3>
           <p>About - {data.swapThreeAbout}</p>

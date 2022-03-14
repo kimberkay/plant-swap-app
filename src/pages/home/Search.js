@@ -30,6 +30,7 @@ export default function SelectIngredientForm({ data, addSwap }) {
               <option value="cheese">cheese</option>
           </select>
           </label>
+          <p></p>
           <label>
             <span>Select the Cuisine Type of Your Recipe:</span>
             <select onChange={(e) => setCuisine(e.target.value)}>
@@ -43,6 +44,7 @@ export default function SelectIngredientForm({ data, addSwap }) {
               <option value="baked-goods">Baked Goods</option>
             </select>
           </label>
+          <p></p>
           <button className="button">Submit</button>
         </form>
       </Row>

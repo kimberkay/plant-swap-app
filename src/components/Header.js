@@ -9,7 +9,7 @@ export default function Header() {
     <React.Fragment>
       <Row>
       <div className="header-wrapper">
-        <img className="logo" src={Logo} alt="white veggies with a small pink heart being tossed in a pot, evokes love in cooking" />
+        <img className="logo" src={Logo} alt="veggies with a small pink heart being tossed in a pot, evokes love in cooking" />
       </div>
       </Row>
       <div className="spacer"></div>
