@@ -21,10 +21,10 @@ export default function Swaps({swap}) {
 
   return (
     <React.Fragment>
-      <div className="card"></div>
       {error && <p className="error">{error}</p>}
       {isPending && <p className="loading">Loading...</p>}
-      {data && <Search data={data} addSwap={addSwap} />}
+      {data && <Search  data={data} addSwap={addSwap} />}
+      <div className="spacer"></div>
       <SwapsList swaps={swaps} /> 
     </React.Fragment>
   )

@@ -7,9 +7,8 @@ export default function SwapList({ swaps, details }) {
  
   return(
     <React.Fragment>
-    <div className="swap-list">
       {swaps.map((swap) => (
-        <div key={swap.swapId} className="card">
+        <div key={swap.swapId} className="list-wrapper">
           <h3>Swap: <em>{swap.ingredientToSwap}</em></h3>
           <h3>Cuisine Type: <em>{swap.cuisineType}</em></h3>
           <h3>Plant Swaps:</h3>
@@ -17,13 +16,10 @@ export default function SwapList({ swaps, details }) {
           <div>{swap.swapOneAbout.substring(0,100)}</div>
           <h3>{swap.swapTwo}</h3>
           <h3>{swap.swapThree}</h3>
+          <p></p>
           <Link to={`/details/${swap.swapId}`}>Learn More</Link>
-          {console.log(swap.swapId)}
         </div>
-      ))}
-      {console.log(swaps)}
-      
-    </div>
+      ))}  
     </React.Fragment>  
   )
 }

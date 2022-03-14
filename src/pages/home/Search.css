@@ -1,29 +1,26 @@
-.wrapper {
+  .wrapper {
+  background-color: #fff;
+  border-top: #fff;
   border-radius: 10px;
   padding: 2em;
   padding-top: 2em;
   padding-bottom: 2em;
-  margin-bottom: 1.5em;
-  margin-top: 4em;
+  margin-top: 2em;
+  margin-bottom: 2em;
   height: max-content;
-  background-color: rgb(208,234,221);
-  color: white;
-  text-align: center;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  min-width: 200px;
+  text-align: left;
+  max-width: 500px;
   margin: 0 auto;
-}
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25)
+} 
 
 select {
   font-size: large;
-  color: rgb(46,97,88); 
+  color: #333; 
   border-radius: 5px;
-
 
 }
 
 
 
-
-/* rgb(46,97,88) */
-
-/* git log|grep --line-buffered "Date" */

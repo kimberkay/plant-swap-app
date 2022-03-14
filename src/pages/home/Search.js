@@ -17,8 +17,8 @@ export default function SelectIngredientForm({ data, addSwap }) {
   }
   
   return (
-  <Row className="wrapper">
-        <form className="select-ingredient-form" onSubmit={handleSubmit}>
+    <Row className="wrapper">
+        <form onSubmit={handleSubmit}>
           <label>
           <span>Select Ingredient to Swap:</span>
             <select onChange={(e) => setIngredient(e.target.value)}>
@@ -45,6 +45,6 @@ export default function SelectIngredientForm({ data, addSwap }) {
           </label>
           <button className="button">Submit</button>
         </form>
-  </Row>
+      </Row>
   )
 }

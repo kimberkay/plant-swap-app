@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Marcellus&family=Roboto+Condensed:wght@300&display=swap');
 
 
-base styles 
-html, body, #root {
-  height: 100%;
-}
 body {
   font-family:'Roboto Condensed', sans-serif; 
-  margin: 0;
   font-size: 1.4em;
-  background: rgb(232, 226, 229);
+  background: rgb(146, 248,233);
   color: #333;
 }
 
@@ -27,24 +22,26 @@ body {
 }
 
 .wrapper {
-  /* border-style: solid; */
-  border-radius: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-top: 2em;
+  margin-bottom: 2em;
   padding: 2em;
   padding-top: 2em;
   padding-bottom: 2em;
-  margin-bottom: 1.5em;
-  margin-top: 4em;
+  margin-top: 2em;
+  margin-bottom: 2em;
   height: max-content;
-  background-color: rgba(17, 77, 66, 0.865);
+  min-width: 200px;
   text-align: center;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05)
+  max-width: 700px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25)
 }
 
-
-
-h1,h2,h3,p {
-  margin: 0;
+.spacer {
+  height: 20px;
 }
+
 input, textarea {
   color: #333;
   padding: 8px;
@@ -56,11 +53,7 @@ input, textarea {
   width: 100%;
   box-sizing: border-box;
 }
-.page-title {
-  text-align: center;
-  margin: 40px auto;
-  color: #333;
-}
+
 .loading, .error {
   text-align: center;
   margin: 40px auto;
@@ -74,7 +67,7 @@ input, textarea {
     text-align: center;
     line-height: 1;
     font-size: 17px;
-    background-color : rgb(199, 137, 129);
+    background-color : rgb(222, 134, 208);
     padding: 10px;
     outline: none;
     border-radius: 10px;
