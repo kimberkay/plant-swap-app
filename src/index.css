@@ -59,10 +59,7 @@ input, textarea {
   margin: 40px auto;
 }
 
-.button {
-    transition: all .5s ease;
-    color: white;
-    text-transform: uppercase;
+/* .button {
     text-align: center;
     line-height: 1;
     font-size: 17px;
@@ -71,14 +68,26 @@ input, textarea {
     outline: none;
     border-radius: 10px;
     margin-bottom: 2em;
-    margin-left: 2em;
+  }
+
+  .button:before {
+  content:'';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	height: 42px;
+	background: rgba(255,255,255,0.3);
+	border-radius: 5px;
+	transition: all 2s ease;
   }
   
-  .button:hover {
+  .button:hover:before {
+    width: 100%;
     color: #fff;
     background-color: (199, 137, 129);
   }
   
   .button-align {
     text-align: center;
-  }  
+  }   */
