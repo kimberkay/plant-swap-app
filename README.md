@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# _Plant Swap_
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### By: _*Kim Brannian*_
 
-## Available Scripts
+#### An app to find the best plant-based subs for your animal-based ingredients.
 
-In the project directory, you can run:
+## Technologies Used
+* HTML
+* CSS
+* Javascript
+* React
+* React-Bootstrap
+* Package.json
+* Webpack
+* Babel
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Description
+_This is a work in progress which I hope to finish and love enough to send a link to all my friends and family who constantly text me wondering what vegan substitution they could use in their recipes._ There is a lot of content to create for it, and that is where a lot of the work lies now. But this is a map for where it could go._
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## UI
 
-### `npm run build`
+![image of UI for App](src/img/UI.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setup/Installation Requirement
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ * First things first, you have to download the API until it is ready to be hosted. Go to https://github.com/kimberkay/PlantSwap.Solution.git and follow the set-up instructions there.  Then, move onto the following...
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ * Open the terminal and navigate to your Desktop directory
+ * Type the command git clone https://github.com/kimberkay/plant-swap-app.git
+ * Open the cloned directory in your code editor
+ * Run npm install to install dependencies
+ * Type npm start to start the server and view the application.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ GLHF!
