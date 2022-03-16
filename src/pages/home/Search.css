@@ -1,4 +1,6 @@
-  .wrapper {
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+
+  .search-wrapper {
   background-color: #fff;
   border-top: #fff;
   border-radius: 10px;
@@ -9,44 +11,80 @@
   margin-bottom: 2em;
   height: max-content;
   min-width: 200px;
-  text-align: left;
-  max-width: 600px;
+  text-align: center;
+  max-width: 650px;
   margin: 0 auto;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25)
 } 
+
+.select-label {
+  font-size: x-large;
+}
 
 select {
   font-size: large;
   color: #333; 
   border-radius: 5px;
+  padding: .5em 3.5em .5em 1em;
+}
+ select option {
+   background-color: #fff;
+ }
+
+.select-label {
+  font-size: x-large;
 }
 
 .button {
+  padding: 1em 2.5em;
+  font-size: 20px;
+  font-family: 'Ubuntu' sans-serif;
+  font-weight: 800;
+  color: #fff;
+  background-color:rgb(221, 129, 207);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+ }
+ 
+ .button:hover {
+  background-color: rgb(177, 36, 216);
+  box-shadow: 0px 15px 20px rgba(189,97,175, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+ }
+ 
+ .button:active {
+  transform: translateY(-1px);
+ }
+
+
+/* .button {
+  font-family: "Ubuntu", sans-serif;
+  background-color : rgb(222, 134, 207); 
   transition: all .5s ease;
   text-align: center;
-  text-transform: uppercase;
   line-height: 1;
-  font-size: 17px;
-  border: 3px solid rgb(222, 134, 207);
+  font-size: 20px;
+  border: 1px solid #de86cf;
   color: #fff;
-  background-color : rgba(222, 134, 207, 0.988);
-  padding: 10px;
+  padding: 15px;
   outline: none;
   border-radius: 10px;
   margin-bottom: 2em;
 }
 
-button:hover {
+.button:hover {
   background-color:rgb(18, 136, 141);
   border-color: rgb(18, 136, 141);
 }
 .button-align {
   text-align: center;
-}  
+}   */
 
-.select-label {
-  font-size: x-large;
-}
 
 
 

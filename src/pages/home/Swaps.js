@@ -3,7 +3,6 @@ import { useFetch } from '../../hooks/useFetch'
 import { useState } from 'react'
 import Search from './Search'
 import SwapsList from '../../components/SwapsList'
-import { Row, Col, FormControl } from 'react-bootstrap'
 import './Swaps.css'
 
 

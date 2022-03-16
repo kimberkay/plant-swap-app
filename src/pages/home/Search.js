@@ -16,7 +16,7 @@ export default function SelectIngredientForm({ data, addSwap }) {
   }
   
   return (
-    <Row className="wrapper">
+    <Row className="search-wrapper">
         <form onSubmit={handleSubmit}>
           <label>
           <span className="select-label">Select Ingredient to Swap:  </span>

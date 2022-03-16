@@ -1,24 +1,93 @@
 .list-wrapper {
-  transition: all .10s ease-in-out;
-  background-color: #fff;
-  border-radius: 10px;
-  margin: 0 auto;
-  margin-bottom: 15px;
-  padding: 1em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 1em;
-  height: max-content;
-  min-width: 200px;
-  text-align: left;
-  max-width: 600px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    transition: ease-out;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    height: max-content;
+    min-width: 200px;
+    text-align: left;
+    max-width: 650px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25)
 }
 
 .swap-header {
+font-family: "Ubuntu", sans-serif;
 font-size:x-large;
-color: rgb(18,136,141);
+color: #12888d;
 }
+
+ 
+.small-button {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  }
+
+.small-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: rgba(244, 178, 234, 0.632);
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+
+  .small-button span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: rgb(177, 36, 216);
+  }
+
+  .your-swaps {
+    font-weight:800;
+    color: #0e686c
+  }
+  
+  .small-button svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: rgb(177, 36, 216);
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  .small-button:hover:before {
+    width: 100%;
+    background: rgba(244, 178, 234, 0.632);
+  }
+
+  .small-button:hover svg {
+  transform: translateX(0);
+  }
+
+  .small-button:active {
+  transform: scale(0.95);
+  }   
+
+
+
+
 
 
 
